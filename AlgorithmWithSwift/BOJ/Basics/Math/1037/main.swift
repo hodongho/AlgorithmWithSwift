@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+var N = Int(readLine()!)!
+
+let AtoArray = readLine()!.split(separator: " ").map { Int($0)! }
+
+print(AtoArray.min()! * AtoArray.max()!)
