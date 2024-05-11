@@ -25,7 +25,7 @@ while true {
         break
     }
 
-    for index in 2 ... num / 2 where primes[num - index] == true && primes[index] == true {
+    for index in stride(from: 3, through: num / 2, by: 2) where primes[num - index] == true && primes[index] == true {
         print("\(num) = \(index) + \(num - index)")
         break
     }
